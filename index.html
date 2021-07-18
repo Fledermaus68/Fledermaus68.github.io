@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>fledi.ovh</title>
+    <meta name="author" content="fledi">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <img id="avatar" src="img/logo.png">
+        <h1 id="title">fledi.ovh</h1>
+        <button class="button" id="discord">Discord</button>
+        <button class="button" id="youtube">YouTube</button>
+        <button class="button" id="twitter">Twitter</button>
+        <button class="button" id="github">GitHub</button>
+    </div>
+
+    <script>
+        $(".button").click(function() {
+            if (this.id == "discord") {
+                window.location.href = "https://discord.gg/S8Z77aS";
+            } else if (this.id == "youtube") {
+                window.location.href = "https://www.youtube.com/channel/UCcKMsXB18g551-JA_meLmfg";
+            } else if (this.id == "twitter") {
+                window.location.href = "https://twitter.com/fledermaus68";
+            } else if (this.id == "github") {
+                window.location.href = "https://github.com/fledermaus68";
+            }
+        });
+    </script>
+
+</body>
+
+</html>
